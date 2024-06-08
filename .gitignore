@@ -161,3 +161,7 @@ cython_debug/
 
 .DS_Store
 **/.DS_Store
+
+data/kaggle_dataset/2020_2023.csv
+data/kaggle_dataset/combined.csv
+exploration/Data_collection/sheet1_with_mood.csv
