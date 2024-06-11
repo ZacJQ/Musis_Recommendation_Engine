@@ -28,8 +28,10 @@ dataset = dataset.drop(columns=['artist_name','track_name'])
 features = dataset.columns.tolist()
 X = dataset[features]
 scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X)
+X_inference = scaler.fit_transform(X)
 
 print(scaler.mean_ , scaler.scale_)
 
 loaded_model = load('model.joblib')
+
+predictions = loaded_model.predict(X_inference)
